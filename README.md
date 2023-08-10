@@ -7,10 +7,10 @@ Pagination is already handled for you in app.js, this can be enhanced if you wis
 Currently, the app displays the following:
 
 ## Tasks implemented
-  #Improved the Card UI and Pagination of the main landing page
-  #Add a Root layout and Navbar 
-  #Implement Scroll top on page change
-  #Implement util formatDate to de-couple moment from the rest of the project
+  *Improved the Card UI and Pagination of the main landing page
+  *Add a Root layout and Navbar 
+  *Implement Scroll top on page change
+  *Implement util formatDate to de-couple moment from the rest of the project
 
 ## UI
 
