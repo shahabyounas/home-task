@@ -6,7 +6,21 @@ Pagination is already handled for you in app.js, this can be enhanced if you wis
 
 Currently, the app displays the following:
 
-![img.png](img.png)
+## Tasks implemented
+Improved the Card UI and Pagination of the main landing page
+Add a Root layout and Navbar 
+Implement Scroll top on page change
+Implement util formatDate to de-couple moment from the rest of the project
+
+## UI
+
+<img width="1716" alt="Screenshot 2023-08-10 at 13 35 48" src="https://github.com/shahabyounas/home-task/assets/13433949/15fe0ad9-a75e-4892-ba06-08824bffe758">
+<img width="1728" alt="Screenshot 2023-08-10 at 13 27 21" src="https://github.com/shahabyounas/home-task/assets/13433949/0fc416dd-d8dc-4b4a-a253-6ad3da81a036">
+
+
+## Screen Recording
+https://drive.google.com/file/d/1lGS1VqBn8BE_-6AcBMdVZdATH5BENM4G/view?usp=drive_link
+
 
 Your task is to style this information in whatever way you feel.  Have fun and show off your frontend skills!
 
