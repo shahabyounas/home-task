@@ -1,8 +1,9 @@
 import './App.css';
 import {useState, useEffect} from "react";
 import Launches from "./components/Launches";
-import {Button, Container} from "@mui/material";
+import {Button, Container, Typography} from "@mui/material";
 import RootLayout from './components/rootLayout';
+import Pagination from './components/Pagination';
 
 function App() {
 
@@ -125,6 +126,11 @@ function App() {
         fetchData(currentPage - 1)
     }
 
+    const handlePagination = (event, value) => {
+        setCurrentPage(value)
+        fetchData(value)
+    }
+
     return (
         <RootLayout>
 
@@ -133,10 +139,14 @@ function App() {
                 {data["docs"] ? (
                     <div>
                         <Launches launches={data["docs"]}/>
-                        <p>Page {data["page"]} / {data["totalPages"]} </p>
+                        {/* <p>Page {data["page"]} / {data["totalPages"]} </p>
                         <Button variant="outlined" onClick={prevPage} disabled={currentPage === 1}>Prev Page</Button>
                         <Button variant="outlined" onClick={nextPage} disabled={currentPage === data["totalPages"]}>Next
-                           Page</Button>
+                           Page</Button> */}
+
+                        <Typography sx={{ my: '2rem', display: 'flex', justifyContent: 'center' }} >
+                            <Pagination count={data["totalPages"]} page={data["page"]} handleChange={handlePagination} />
+                        </Typography>
 
                    </div>
                 ) : (
