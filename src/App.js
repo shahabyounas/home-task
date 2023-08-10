@@ -2,6 +2,7 @@ import './App.css';
 import {useState, useEffect} from "react";
 import Launches from "./components/Launches";
 import {Button, Container} from "@mui/material";
+import RootLayout from './components/rootLayout';
 
 function App() {
 
@@ -125,7 +126,7 @@ function App() {
     }
 
     return (
-        <div>
+        <RootLayout>
 
             <Container>
                 <p>Total Launches: {data["totalDocs"]}</p>
@@ -144,7 +145,7 @@ function App() {
 
             </Container>
 
-        </div>
+        </RootLayout>
     );
 }
 export default App;

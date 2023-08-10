@@ -1,5 +1,6 @@
 import { Card, CardHeader, CardMedia, CardContent, Typography } from "@mui/material";
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
+import { formatDate } from "../../utils/date";
 
 function LaunchCard(props){
     const {
@@ -13,10 +14,9 @@ function LaunchCard(props){
 
 
 
-
     return <div>
-        <Card sx={{ maxWidth: 300, height: 400 }}>
-            <CardMedia image={small} height="150" component="img"/>
+        <Card sx={{ maxWidth: 310, height: 490 }}>
+            <CardMedia image={small} height="270" component="img"/>
             <CardContent>
 
                 <Typography sx={{ my: '.5rem',  fontWeight: 'bold', fontSize: 14 }} component="div">
@@ -28,13 +28,13 @@ function LaunchCard(props){
                 </Typography>
 
                 <Typography sx={{ my: '.5rem', color: 'gray', fontSize: 14 }} component="div">
-                    {details.substring(0, 100)}...
+                    {details.substring(0, 80)}...
                 </Typography>
 
                 <Typography sx={{ display: 'flex', justifyContent: 'space-between', mt:'2rem' }}>
 
                     <Typography sx={{ fontWeight: 'bold', fontSize: 13, color: 'gray', mt: '.1rem' }}>
-                         {date_utc}
+                         {formatDate(date_utc)}
                     </Typography>
 
                     <Typography component="div">

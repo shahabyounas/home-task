@@ -1,9 +1,6 @@
 .page{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    /* height: 150px; */
-    /* width:350px; */
-    /* text-align: center; */
+    gap: 20px;
     padding-top: 10px;
 }

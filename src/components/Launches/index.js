@@ -1,5 +1,5 @@
 import {Grid, Paper} from "@mui/material";
-import LaunchCard from "../Launch";
+import LaunchCard from "../LaunchCard";
 import styles from './launches.module.css';
 
 
